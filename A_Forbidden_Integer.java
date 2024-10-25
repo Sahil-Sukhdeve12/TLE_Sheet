@@ -1,7 +1,7 @@
-import java.util.*;
 import java.io.*;
+import java.util.*;
 
-public class {
+public class A_Forbidden_Integer{
     static class FastReader{
         BufferedReader br;
         StringTokenizer st;
@@ -63,7 +63,9 @@ public class {
             FastWriter out = new FastWriter();
             int testCases=in.nextInt();
             while(testCases-- > 0){
-                int n=in.nextInt();
+                int n=in.nextInt(),k=in.nextInt(),x=in.nextInt();
+
+                
             }
             out.close();
         } catch (Exception e) {

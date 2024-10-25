@@ -1,7 +1,7 @@
-import java.util.*;
 import java.io.*;
+import java.util.*;
 
-public class {
+public class A_Buttons{
     static class FastReader{
         BufferedReader br;
         StringTokenizer st;
@@ -63,7 +63,17 @@ public class {
             FastWriter out = new FastWriter();
             int testCases=in.nextInt();
             while(testCases-- > 0){
-                int n=in.nextInt();
+                // int n=in.nextInt();
+                int a=in.nextInt(),b=in.nextInt(),c=in.nextInt();
+
+                if(c%2==0){
+                    if(a>b) System.out.println("First");
+                    else System.out.println("Second");
+                }
+                else{
+                    if(b>a) System.out.println("Second");
+                    else System.out.println("First");
+                }
             }
             out.close();
         } catch (Exception e) {

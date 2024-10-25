@@ -1,7 +1,7 @@
-import java.util.*;
 import java.io.*;
+import java.util.*;
 
-public class {
+public class A_United_We_Stand{
     static class FastReader{
         BufferedReader br;
         StringTokenizer st;
@@ -64,6 +64,17 @@ public class {
             int testCases=in.nextInt();
             while(testCases-- > 0){
                 int n=in.nextInt();
+                int arr[]=new int[n];
+
+                for(int i=0; i<n; i++) arr[i]=in.nextInt();
+
+                List<Integer>list1=new ArrayList<>();
+                List<Integer>list2=new ArrayList<>();
+
+                
+
+
+                
             }
             out.close();
         } catch (Exception e) {

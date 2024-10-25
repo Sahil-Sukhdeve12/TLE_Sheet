@@ -1,7 +1,7 @@
-import java.util.*;
 import java.io.*;
+import java.util.*;
 
-public class {
+public class A_Grasshopper_on_a_Line{
     static class FastReader{
         BufferedReader br;
         StringTokenizer st;

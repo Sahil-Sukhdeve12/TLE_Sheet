@@ -1,7 +1,7 @@
-import java.util.*;
 import java.io.*;
+import java.util.*;
 
-public class {
+public class B_Sequence_Game{
     static class FastReader{
         BufferedReader br;
         StringTokenizer st;
@@ -64,6 +64,30 @@ public class {
             int testCases=in.nextInt();
             while(testCases-- > 0){
                 int n=in.nextInt();
+                // int arr[]=new int[n];
+
+                // for(int i=0; i<n; i++) arr[i]=in.nextInt();
+
+                List<Integer>list=new ArrayList<>(n);
+                List<Integer>ans=new ArrayList<>();
+
+                for(int i=0; i<n; i++) list.add(in.nextInt());
+
+                ans.add(list.get(0));
+
+                for(int i=1; i<n; i++){
+                    if(list.get(i-1)>list.get(i)){
+                        ans.add(list.get(i));
+                        ans.add(list.get(i));
+                    }
+                    else ans.add(list.get(i));
+                }
+
+                System.out.println(ans.size());
+                for(int val:ans){
+                    System.out.print(val+" ");
+                }
+                System.out.println();
             }
             out.close();
         } catch (Exception e) {

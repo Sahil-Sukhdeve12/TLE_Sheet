@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class {
+public class A_Ambitious_Kid{
     static class FastReader{
         BufferedReader br;
         StringTokenizer st;
@@ -61,10 +61,22 @@ public class {
         try {
             FastReader in=new FastReader();
             FastWriter out = new FastWriter();
-            int testCases=in.nextInt();
-            while(testCases-- > 0){
+            // int testCases=in.nextInt();
+            // while(testCases-- > 0){
                 int n=in.nextInt();
-            }
+                // int arr[]=new int[n];
+                
+                int min=Integer.MAX_VALUE;
+
+                for(int i=0; i<n; i++){
+                    // arr[i]=in.nextInt();
+                    int curr=in.nextInt();
+
+                    min=Math.min(min,Math.abs(curr));
+                } 
+
+                out.println(min);
+            // }
             out.close();
         } catch (Exception e) {
             return;

@@ -1,7 +1,11 @@
-import java.util.*;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.StringTokenizer;
 
-public class {
+public class A_Array_Coloring{
     static class FastReader{
         BufferedReader br;
         StringTokenizer st;
@@ -64,6 +68,25 @@ public class {
             int testCases=in.nextInt();
             while(testCases-- > 0){
                 int n=in.nextInt();
+                int arr[]=new int[n];
+
+                for(int i=0; i<n; i++) arr[i]=in.nextInt();
+
+                int oddsum=0,evensum=0;
+
+                if(n==2){
+                    oddsum+=arr[0];
+                    evensum+=arr[1];
+                }
+
+                if(n>2){
+                for(int i=0; i<n; i++){
+                    if(arr[i]%2==0) evensum+=arr[i];
+                    else oddsum+=arr[i];
+                }
+                }
+
+                System.out.println((evensum%2==0 && oddsum%2==0 || evensum%2!=0 && oddsum%2!=0)?"YES":"NO");
             }
             out.close();
         } catch (Exception e) {

@@ -4,8 +4,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
+import java.util.*;
 
-public class A_Don_t_Try_to_Count{
+public class A_How_Much_Does_Daytona_Cost{
     static class FastReader{
         BufferedReader br;
         StringTokenizer st;
@@ -67,27 +68,62 @@ public class A_Don_t_Try_to_Count{
             FastWriter out = new FastWriter();
             int testCases=in.nextInt();
             while(testCases-- > 0){
-                int n=in.nextInt(),m=in.nextInt();
-                String x=in.nextLine();
-                String s=in.nextLine();
+                int n=in.nextInt();
+                int k=in.nextInt();
+                int arr[]=new int[n];
 
-                int count=0;
-                if(x.contains(s)) out.println("0");
+                for(int i=0; i<n; i++) arr[i]=in.nextInt();
 
-                else{
-                    int i=5;
-                    while(i>0){
-                        if(x.contains(s)) break;
-                        // x=x+x;
-                        x+=x;
-                        count++;
+                //  HashMap<Integer,Integer>map=new HashMap<>();
 
-                        i--;
-                    }
-                    if(x.contains(s)) out.println(count);
-                    else out.println(-1);
-                }
+                // for(int i=0; i<n; i++){
+                //     arr[i]=in.nextInt();
+                //     map.put(arr[i],map.getOrDefault(arr[i],0)+1);
+                // }
+
+                // System.out.println(map);
                 
+                // int freq[]=new int[n];
+                // int idx=0;
+                // for(int v:map.values()){
+                //     freq[idx++]=v;
+                // }
+
+                // int max=0;
+                // for(int i:map.values()){
+                //     if(i>=max) max=i;
+                // }
+
+                // boolean found=false;
+                // for(Map.Entry<Integer,Integer>entry:map.entrySet()){
+                //     Integer key=entry.getKey(),val=entry.getValue();
+
+                //     if(key==k && val==max){
+                //         System.out.println("YES");
+                //         found=true;
+                //         break;
+                //     }
+                // }
+
+                // if(!found){
+                //     System.out.println("NO");
+                // }
+                boolean flag=false;
+
+                for(int i=0; i<n; i++){
+                    if(arr[i]==k){
+                       flag=true;
+                       break;
+                    }
+                    
+                }
+
+                if(flag) System.out.println("YES");
+                else System.out.println("NO");
+
+                
+
+               
             }
             out.close();
         } catch (Exception e) {
