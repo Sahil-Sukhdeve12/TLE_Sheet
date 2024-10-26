@@ -68,12 +68,30 @@ public class A_United_We_Stand{
 
                 for(int i=0; i<n; i++) arr[i]=in.nextInt();
 
+                Arrays.sort(arr);
+
                 List<Integer>list1=new ArrayList<>();
                 List<Integer>list2=new ArrayList<>();
 
-                
+                int idx=0;
+                while(idx<n && arr[idx]==arr[0]){
+                    list1.add(arr[idx]);
+                    idx++;
+                }
+                while(idx<n){
+                    list2.add(arr[idx]);
+                    idx++;
+                }
 
+                if(list2.size()==0) System.out.println(-1);
+                else{
+                    System.out.println(list1.size()+" "+list2.size());
 
+                    for(int i:list1) System.out.print(i+" ");
+                    System.out.println();
+                    for(int i:list2) System.out.print(i+" ");
+                    System.out.println();
+                }
                 
             }
             out.close();

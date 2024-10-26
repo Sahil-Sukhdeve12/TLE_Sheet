@@ -63,7 +63,16 @@ public class A_Grasshopper_on_a_Line{
             FastWriter out = new FastWriter();
             int testCases=in.nextInt();
             while(testCases-- > 0){
-                int n=in.nextInt();
+                int x=in.nextInt(),k=in.nextInt();
+                
+                if(x%k!=0){
+                    System.out.println(1);
+                    System.out.println(x);
+                }
+                else{
+                    System.out.println(2);
+                    System.out.println(1+" "+(x-1));
+                }
             }
             out.close();
         } catch (Exception e) {

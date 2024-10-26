@@ -73,3 +73,29 @@ public class A_Forbidden_Integer{
         }
     }
 }
+/*if (x != 1) {
+
+                    out.println("YES");
+
+                    out.println(n);
+                    for (int i = 0; i < n; i++) {
+                        out.print(1 + " ");
+                    }
+                    
+                    out.println("");
+                } else if (k == 1 || (k == 2 && n % 2 == 1)) {
+                    out.println("NO");
+                } else {
+                    out.println("YES");
+                    out.println(n / 2);
+                    if (n % 2 == 1) {
+                        out.print(3 + " ");
+                        for (int i = 1; i < n / 2; i++) {
+                            out.print(2 + " ");
+                        }
+                    } else {
+                        for (int i = 0; i < n / 2; i++) {
+                            out.print(2 + " ");
+                        }
+                    }
+                    out.println(""); */
